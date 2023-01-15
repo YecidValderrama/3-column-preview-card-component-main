@@ -1,0 +1,80 @@
+:root {
+    /* ### Primary */
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    
+    /* ### Neutral */
+    
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 0%, 95%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #333;
+}
+
+.cards{
+    width: 90%;
+    height: 500px;
+    margin: 200px auto;
+    /* display: flex; */
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 2em;
+    color: var(--Transparent_white);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.card_title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+.card_description {
+    width: 200px;
+}
+.card_orange {
+    background-color: var(--Bright_orange);
+}
+
+.card_cyan {
+    background-color: var(--Dark_cyan);
+}
+
+.card_dark_cyan {
+    background-color: var(--Very_dark_cyan);
+}
+
+.card_cta {
+    position: absolute;
+    padding: 0.7em 2em;
+    background-color:#fff ;
+    border-radius: 1.2em;
+    text-decoration: none;
+    bottom: 50px;
+}
+.card_cta--orange {
+    color: var(--Bright_orange);
+}
+
+.card_cta--cyan {
+    color: var(--Dark_cyan);
+}
+
+.card_cta--dark_cyan {
+    color: var(--Very_dark_cyan);
+} 
